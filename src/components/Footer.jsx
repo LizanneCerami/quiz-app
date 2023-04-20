@@ -1,4 +1,4 @@
-import { GitHub } from 'react-bootstrap-icons'
+// import { GitHub } from 'react-bootstrap-icons'
 import { Col, Container, Row } from "react-bootstrap";
 
 export default function Footer () {
@@ -13,7 +13,7 @@ export default function Footer () {
           <Col>
             <p><small>&copy;</small> {currentYear}
             <br />
-            <GitHub />
+          
             <a href={githubLink} target="_blank"
              rel="noreferrer">Code in GitHub</a></p>
           </Col>
