@@ -1,38 +1,54 @@
-.App {
+:root {
+  --color-white: #ffffff;
+  --color-gray: #333333;
+
+}
+
+*, *::before, *::after { margin:0; padding: 0; box-sizing: inherit;}
+
+body {
+  background-color: aqua;
+  background-image: url("/public/images/pexels-lisa-fotios-1009922.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p, li {
+  font-size: clamp(17px, 4vw, 21px);
+}
+
+h1 {
+  font-size: clamp(41px, 4vw, 58px);
+  font-weight: 800;
+  color: lightseagreen;
   text-align: center;
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quiz-card, .quiz-result {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: lightyellow;
+  border-radius: 13px;
+  padding: 40px;
+  opacity: .91;
+  border: 5px solid navajowhite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.quiz-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.quiz-card ul li {
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quiz-card ul li:hover {
+  background-color: rgba(0, 255, 255, 0.546);
 }
